@@ -1,11 +1,12 @@
-CSS Text properties:
+Section 01:	Text Properties
 
-there are many properties used to style text:
-these are text properties and it will only apply texts, paragraphs.
+There are many text properties that are used to style texts.
 
-Section 01:	Text Color
+In this section you will learn about the 2 properties of texts:
 
-In this section you will learn about the 2 properties:
+CSS Text Properties:
+
+there are 2 properties to style texts or paragraphs:
 
 1. color 
 2. background-color 
@@ -13,6 +14,7 @@ In this section you will learn about the 2 properties:
 1. Color Property:
 
 the color property defines the color of the text and paragraph.
+these are text properties and it will only apply any texts or paragraphs.
 
 code:
 
@@ -20,15 +22,16 @@ h1 {
   color: blue;
 }
 
-Note:	color is the property	blue is the value 
+Note:	color is the property
+	blue is the value 
 
-Types of Values of Color Property:
+Values of Color Property:
 
-There are --- types of values of color property:
+There are 3 types of values of color property:  ---------------------------------------------------------------------------
 
-color name   -   red
-RGB value    -   rgb(255,0,0) - (defines red color)
-HEX value    -   #ffffff      - (defines white color)
+1. color name   -   red
+2. RGB value    -   rgb(255,0,0) - (defines red color)
+3. HEX value    -   #ffffff      - (defines white color)
 
 Look at CSS Color Values for a complete list of possible color values.
 link:	https://www.w3schools.com/cssref/css_colors_legal.php
@@ -43,9 +46,9 @@ body {
   color: orange;
 }
 
-2. Background Color:
+2. Background-Color Property:
 
-the background color property defines the background color of an HTML element
+the background-color property defines the background color of an HTML element
 
 code:
 
@@ -74,7 +77,7 @@ Note:
 Important: High contrast is very important for people with vision problems. So, always ensure that
 the contrast between the text color and the background color (or background image) is good!
 
-Summary of section 01:
+Summary of Section 01:
 
 The CSS Text Color Property:
 
@@ -87,7 +90,7 @@ Property		Description
 
 Section 02:	CSS Text Alignment
 
-In this section you will learn about the 5 properties:
+In this section you will learn about the 5 properties of text alignment:
 
 1. text-align
 2. text-align-last
@@ -188,7 +191,7 @@ The vertical-align-property have 9 properties:
 
 Example:
 
-Set the vertical alignment of an image in a text: 
+Set the vertical alignment of an image in a text:
 
 img.a {
   vertical-align: baseline;
@@ -226,16 +229,407 @@ p {
 
 Summary of Section 02:
 
-The CSS Text Alignment/Direction Properties
+The CSS Text Alignment/Direction Properties:
 
-Property		Description
+Property		          Description
 
-1. text-align		Specifies the horizontal alignment of text
-2. text-align-last	Specifies how to align the last line of a text that display on a webpage
-3. vertical-align	Sets the vertical alignment of an element
-4. direction		Specifies the text direction/writing direction
-5.  nicode-bidi		Used together with the direction property to set or return whether the text should be overridden to support multiple languages
-			in the same document
+1. text-align		      Specifies the horizontal alignment of text
+2. text-align-last	  Specifies how to align the last line of a text that display on a webpage
+3. vertical-align	    Sets the vertical alignment of an element
+4. direction		      Specifies the text direction/writing direction
+5. unicode-bidi		    Used together with the direction property to set or return whether the text should be overridden to support multiple
+                      languages in the same document
 
   --------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+Section 03:	CSS Text Decoration
+
+In this section you will learn about the 1 property with 4 values of text decoration:
+
+Text Decoration Property:
+
+The CSS text-decoration property defines the decorative lines of text.
+it is used to control the appearance of decorative lines on text.
+
+Note:
+
+The main property in this section is CSS text-decoration property.
+we can define all the values of line decoration in CSS text-decoration property
+it is required to define the type of line in the CSS Text-Decoration Property
+
+It is a shorthand property for the following individual properties:
+we will learn how to use this shorthand property in CSS in the last of this section
+
+1.0 text-decoration-line
+1.1 text-decoration-color
+1.2 text-decoration-style
+1.3 text-decoration-thickness
+
+1. Text-Decoration-Line Property: 
+
+The CSS text-decoration-line property adds different types of decorative lines to the text.
+
+Values of Text-Decoration-Line Property: 
+
+there are 4 values of text-decoration-line property:
+
+1. none - Default value. Displays no decoration line
+2. underline - The decoration line is displayed under the text
+3. overline - The decoration line is displayed over the text
+4. line-through - The decoration line is displayed through the text/from the center of text
+
+Tip: You can combine multiple values, like overline and underline to display lines both over and under a text.
+
+Example:
+
+h1 {
+  text-decoration-line: overline;
+}
+
+h2 {
+  text-decoration-line: line-through;
+}
+
+h3 {
+  text-decoration-line: underline;
+}
+
+p {
+  text-decoration-line: overline underline;
+}
+
+2. Text-Decoration-Color Property:
+
+The CSS text-decoration-color property defines the color of the decoration line
+
+Example:
+
+h1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+}
+
+h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+}
+
+p {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+}
+
+3. Text-Decoration-Style Property:
+
+The CSS text-decoration-style property defines the style of the decoration line.
+
+Values of Text-Decoration-Style Property:
+
+there are 5 properties of CSS text-decoration-style property:
+
+1. solid - Default value. Displays single line
+2. double - Displays double line
+3. dotted - Displays dotted line
+4. dashed - Displays dashed line
+5. wavy - Displays wavy line
+
+Example:
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-style: double;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+}
+
+p.ex1 {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
+p.ex2 {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+p.ex3 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+}
+
+4. Text-Decoration-Thickness Property:
+
+The CSS text-decoration-thickness property defines the thickness of the decoration line.
+it can defines in the different units of length.
+
+h1 {
+  text-decoration-line: underline;
+  text-decoration-thickness: auto;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 5px;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-thickness: 25%;
+}
+
+p {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: double;
+  text-decoration-thickness: 5px;
+}
+
+The Shorthand Property:   (Short Method)
+
+The CSS text-decoration property is a shorthand property for below properties:
+
+Note:   it is required to define the type of line in the CSS Text-Decoration Property
+
+1. text-decoration-line (required)
+2. text-decoration-color (optional)
+3. text-decoration-style (optional)
+4. text-decoration-thickness (optional)
+
+Note:
+
+The main property in this section is CSS text-decoration property.
+we can define all the values of line decoration in CSS text-decoration property
+it is required to define the type of line in the CSS Text-Decoration Property
+
+Example:
+
+defines only the line:
+
+h1 {
+  text-decoration: underline;
+}
+
+defines the line and color:
+
+h2 {
+  text-decoration: underline red;
+}
+
+defines the line, color and style:
+
+h3 {
+  text-decoration: underline red double;
+}
+
+defines the line, color, style and thickness:
+
+p {
+  text-decoration: underline red double 5px;
+}
+
+A Small Tip on Links:
+
+All links in HTML are underlined by default.
+Sometimes you see that links are styled with no underline.
+The noneo value of text-decoration property is used in CSS to remove the underline from the links, like this:
+
+Example:
+
+a {
+  text-decoration: none;
+}
+
+Summary of Section 03:
+
+All CSS text-decoration Properties:
+
+Property	                       Description
+    
+1.0 text-decoration	             Sets all the text-decoration properties in one declaration
+1.1 text-decoration-color	       Specifies the color of the text-decoration
+1.2 text-decoration-line	       Specifies the kind of text decoration to be used (underline, overline, etc.)
+1.3 text-decoration-style	       Specifies the style of the text decoration (solid, dotted, etc.)
+1.4 text-decoration-thickness    Specifies the thickness of the text decoration line
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+Section 04:	CSS Text Transformation
+
+In this section you will learn about the 4 values of text transformation property.
+
+1. Text-Transform Property:
+
+The CSS text-transform property is defines the capitalization of text in an element.
+
+It is used to transform a text into uppercase or lowercase letters, capitalize the first letter of each word, without changing the original content in HTML.
+
+Values of Text-Rransform Property:
+
+there are 4 values of text-transform property:
+
+1. none - No transformation. Text renders as it is
+2. capitalize - Transforms the first character of each word to uppercase
+3. uppercase - Transforms all characters to uppercase
+4. lowercase - Transforms all characters to lowercase
+
+Example:
+
+Demonstration of the text-transform property:
+
+p.capitalize {
+  text-transform: none;
+}
+
+p.uppercase {
+  text-transform: uppercase;
+}
+
+p.lowercase {
+  text-transform: lowercase;
+}
+
+p.capitalize {
+  text-transform: capitalize;
+}
+
+Summary of Section 04:
+
+The CSS Text Transformation Property:
+
+Property	            Description
+
+1. text-transform	      Controls the capitalization of text
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+Section 05:	CSS Text Spacing
+
+In this section you will learn about the 5 properties:
+
+1. text-indent
+2. letter-spacing
+3. line-height
+4. word-spacing
+5. white-space
+
+1. Text-Indent Property:
+
+The CSS text-indent property defines the indentation of the first line in a text-block that will display in the browser/webpage.
+
+Tip: Negative values are allowed. The first line will be indented to the left if the value is negative.
+
+Example:
+
+Indent the first line of text in a text-block that will display in the browser/webpage:
+
+p {
+  text-indent: 50px;
+}
+
+1. Letter-Spacing Property:
+
+The CSS letter-spacing property defines the space between the characters in a text.
+
+Tip: Negative values are allowed.
+
+Example:
+
+Increase and decrease the space between the characters:
+
+h1 {
+  letter-spacing: 5px;
+}
+
+h2 {
+  letter-spacing: -2px;
+}
+
+2. Line-Height Property:
+
+The CSS line-height property defines the space between lines.
+it is used to control the heigh of the line or space between the lines. 
+
+Note: Negative values are not allowed.
+
+Example:
+
+Specify the space between lines:
+
+p.small {
+  line-height: 0.8;
+}
+
+p.big {
+  line-height: 1.8;
+}
+
+3. Word-Spacing Property:
+
+The CSS word-spacing property defines the space between the words in a text.
+
+Tip: Negative values are allowed.
+
+Example:
+
+Increase and decrease the space between words:
+
+p.one {
+  word-spacing: 10px;
+}
+
+p.two {
+  word-spacing: -2px;
+}
+
+4. White-Space Property:
+
+The CSS white-space property defines how white-space inside an element is handled.
+
+Values of White-Space Property:
+
+there are 5 values of white-space property:
+
+1. normal
+2. nowrap
+3. pre
+4. pre-line
+5. pre-wrap
+
+Example:
+
+How to disable text wrapping inside an element
+
+p {
+  white-space: nowrap;
+}
+
+Summary of Section 05:
+
+The CSS Text Spacing Properties:
+
+Property                Description
+
+1. letter-spacing	      Specifies the space between characters in a text
+2. line-height	        Specifies the line height
+3. text-indent	        Specifies the indentation of the first line in a text-block
+4. white-space	        Specifies how to handle white-space inside an element
+5. word-spacing	        Specifies the space between words in a text
+
+
+
+Values of Text-Transform Property:
 
