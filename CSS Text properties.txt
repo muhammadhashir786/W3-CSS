@@ -1,0 +1,241 @@
+CSS Text properties:
+
+there are many properties used to style text:
+these are text properties and it will only apply texts, paragraphs.
+
+Section 01:	Text Color
+
+In this section you will learn about the 2 properties:
+
+1. color 
+2. background-color 
+
+1. Color Property:
+
+the color property defines the color of the text and paragraph.
+
+code:
+
+h1 {
+  color: blue;
+}
+
+Note:	color is the property	blue is the value 
+
+Types of Values of Color Property:
+
+There are --- types of values of color property:
+
+color name   -   red
+RGB value    -   rgb(255,0,0) - (defines red color)
+HEX value    -   #ffffff      - (defines white color)
+
+Look at CSS Color Values for a complete list of possible color values.
+link:	https://www.w3schools.com/cssref/css_colors_legal.php
+
+Text Color of a Webpage:
+
+The default text color of a page is defined in the body selector.
+
+code:	the below code defines only the text color of a webpage
+
+body {
+  color: orange;
+}
+
+2. Background Color:
+
+the background color property defines the background color of an HTML element
+
+code:
+
+defines the color of heading h1
+
+h1 {
+  background-color: green;
+}
+
+defines both text color and background color of a complete webpage
+
+body {
+  background-color: lightgrey;
+  color: purple;
+}
+
+defines both text color and background color for a specific grouped HTML elements
+
+div {
+  background-color: blue;
+  color: white;
+}
+
+Note:
+
+Important: High contrast is very important for people with vision problems. So, always ensure that
+the contrast between the text color and the background color (or background image) is good!
+
+Summary of section 01:
+
+The CSS Text Color Property:
+
+Property		Description
+
+1. color		Specifies the color of text
+2. background-color	Specifies the background color of 
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------  
+
+Section 02:	CSS Text Alignment
+
+In this section you will learn about the 5 properties:
+
+1. text-align
+2. text-align-last
+3. vertical-align
+4. direction
+5. unicode-bidi
+
+1. Text-Align Property:
+
+The text-align property is used to defines the horizontal alignment of a text or paragraphs.
+
+Values of Text-Align Property:
+
+The text-align property have 4 values:
+
+1. left    - Aligns the text to the left
+2. right   - Aligns the text to the right
+3. center  - Centers the text
+4. justify - Stretches the lines so that each line has equal width
+
+The following example shows left, right and center text alignment:
+
+left is default if text direction is left-to-right, and right is default if text direction is right-to-left:
+
+Example:
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-align: left;
+}
+
+h3 {
+  text-align: right;
+}
+
+When the text-align property is set to "justify", each line is stretched so that every line has equal width,
+and the left and right margins are straight (like in magazines and newspapers):
+
+Example:
+
+div {
+  text-align: justify;
+}
+
+2. Text-Align-Last Property:
+
+The text-align-last property specifies how to align the last line of a text that displays in the webpage.
+
+Values of Text-Align-Last Property:
+
+The text-align-last property have 7 values:
+
+1. auto - Default value. The last line is justified and aligned left
+2. left - The last line is aligned to the left
+3. right - The last line is aligned to the right
+4. center - The last line is center-alignedt
+5. justify - The last line is justified as the rest of the lines
+6. start - The last line is aligned at the start of the line
+7. end - The last line is aligned at the end of the line
+
+Example:
+
+Different alignment of the last line in three different <p> elements:
+
+p.a {
+  text-align-last: right;
+}
+
+p.b {
+  text-align-last: center;
+}
+
+p.c {
+  text-align-last: justify;
+}
+
+
+3. Vertical-Alignment Property:
+
+The vertical-alignment property sets the vertical alignment of an HTML element.
+
+Values of Vertical-Align Property:
+
+The vertical-align-property have 9 properties:
+
+1. baseline - Default value. The element is aligned with the baseline of the parent
+2. length/% - Raises or lower an element by the specified length or percent
+3. sub - The element is aligned with the subscript baseline of the parent
+4. super - The element is aligned with the superscript baseline of the parent
+5. top - The element is aligned with the top of the tallest element on the line
+6. text-top - The element is aligned with the top of the parent element's font
+7. middle - The element is placed in the middle of the parent element
+8. bottom - The element is aligned with the lowest element on the line
+9. text-bottom - The element is aligned with the bottom of the parent element's font
+
+Example:
+
+Set the vertical alignment of an image in a text: 
+
+img.a {
+  vertical-align: baseline;
+}
+
+img.b {
+  vertical-align: text-top;
+}
+
+img.c {
+  vertical-align: text-bottom;
+}
+
+img.d {
+  vertical-align: sub;
+}
+
+img.e {
+  vertical-align: super;
+}
+
+4. Text Direction Property:
+
+The text direction property specifies the text direction/writing direction within a block-level element.
+
+Tip: Use this property together with the unicode-bidi property to set or return whether the text should be overridden to support multiple languages
+in the same document.
+
+Example:
+
+p {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+Summary of Section 02:
+
+The CSS Text Alignment/Direction Properties
+
+Property		Description
+
+1. text-align		Specifies the horizontal alignment of text
+2. text-align-last	Specifies how to align the last line of a text that display on a webpage
+3. vertical-align	Sets the vertical alignment of an element
+4. direction		Specifies the text direction/writing direction
+5.  nicode-bidi		Used together with the direction property to set or return whether the text should be overridden to support multiple languages
+			in the same document
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------  
+
