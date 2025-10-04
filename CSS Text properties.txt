@@ -49,7 +49,7 @@ link:	https://www.w3schools.com/cssref/css_colors_legal.php
 
 Text Color of a Webpage:
 
-The default text color of a page is defined in the body selector.
+The default text color of a page is defined in the body selector in CSS.
 
 code:	the below code defines only the text color of a webpage
 

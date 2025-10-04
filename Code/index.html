@@ -8,6 +8,7 @@
   </head>
   <body>
     <h1>CSS Text Chapter</h1>
+    <hr />
     <h2>1. Text Properties</h2>
     <p>There are 2 text properties in css:</p>
     <ol type="a">
@@ -27,11 +28,11 @@ Code:
 Output:</pre
       >
       <span class="firstPara">
-        The color of this line is red using css color property
+        The color of this line is blue using css color property
       </span>
       <br />
     </div>
-    <h3>a. The CSS Background-color Property</h3>
+    <h3>b. The CSS Background-color Property</h3>
     <p>
       The CSS background-color property defines the background color of an HTML
       element
@@ -41,15 +42,396 @@ Output:</pre
 Code:
 
 .secondPara {
-    background-color: blue;
+    background-color: #2aff00;
 }
 
 Output:</pre
       >
       <span class="secondPara">
-        The color of this line is red using css color property
+        The background-color of this line is green using css background-color
+        property
       </span>
-      <br />
     </div>
+    <div class="link">
+      <p>
+        Look at CSS Color Values for a complete list of possible color values.
+      </p>
+      link:
+      <a href="https://www.w3schools.com/cssref/css_colors_legal.php"
+        >All About Color</a
+      >
+    </div>
+    <h2>Text Color of a Webpage</h2>
+    <p>
+      The default text color of a page is defined in the body selector in CSS.
+    </p>
+    <div class="codeBorder">
+      <pre>
+code:	
+
+the below code defines only the text color of a webpage
+
+body {
+  color: orange;
+}
+
+Output: the output is that all the text color will changed to orange that displays in the webpage, but I commented that CSS code, to view the output just uncomment it from style.css file</pre
+      >
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <h2>2. Text Alignment</h2>
+    <p>There are 5 text properties to align the text in css:</p>
+    <ol type="a">
+      <li>text-align</li>
+      <li>text-align-last</li>
+      <li>vertical-align</li>
+      <li>direction</li>
+      <li>unicode-bidi</li>
+    </ol>
+    <h3>a. The CSS Text Align Property</h3>
+    <p>
+      The CSS text-align property defines the horizontal alignment of the text
+      on the screen.
+    </p>
+    <p><strong>Values of Text-Align Property:</strong></p>
+    <p>There are 4 values of text-align property:</p>
+    <ol>
+      <li>left - Aligns the text to the left</li>
+      <li>right - Aligns the text to the right</li>
+      <li>center - Centers the text</li>
+      <li>justify - Stretches the lines so that each line has equal width</li>
+    </ol>
+    <p>The following example shows left text alignment</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.thirdPara {
+  text-align: left;
+}
+
+Output: </pre
+      >
+      <p class="thirdPara">
+        this line is aligned text "left" in CSS which is also by default.
+      </p>
+    </div>
+    <p>
+      <strong>Note: </strong>left is default if text direction is left-to-right,
+      and right is default if text direction is right-to-left:
+    </p>
+
+    <p>The following example shows right text alignment</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.fourthPara {
+  text-align: right;
+}
+
+Output: </pre
+      >
+      <p class="fourthPara">this line is aligned text "right" in CSS.</p>
+    </div>
+
+    <p>The following example shows center text alignment</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.fifthPara {
+  text-align: center;
+}
+
+Output: </pre
+      >
+      <p class="fifthPara">this line is aligned text "center" in CSS.</p>
+    </div>
+
+    <p>The following example shows justify text alignment</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.sixthPara {
+  text-align: justify;
+}
+
+Output: </pre
+      >
+      <p class="sixthPara">this line is aligned text "justify" in CSS.</p>
+    </div>
+    <p>
+      <strong>Question: </strong> What is the defference between text alignment
+      left and justify?
+    </p>
+
+    <h3>b. The CSS Text-Align-Last Property:</h3>
+    <p>
+      The text-align-last property defines the text alignment of last line that
+      displays in the webpage.
+    </p>
+    <p><strong>Values of Text-Align-Last Property:</strong></p>
+    <p>There are 7 values of text-align-last property:</p>
+    <ol>
+      <li>auto - Default value. The last line is justified and aligned left</li>
+      <li>left - The last line is aligned to the left</li>
+      <li>right - The last line is aligned to the right</li>
+      <li>center - The last line is center-alignedt</li>
+      <li>justify - The last line is justified as the rest of the lines</li>
+      <li>start - The last line is aligned at the start of the line</li>
+      <li>end - The last line is aligned at the end of the line</li>
+    </ol>
+    <p>
+      The following example shows "auto" text alignment of the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.seventhPara {
+  text-align-last: auto;
+}
+
+Output: </pre
+      >
+      <p class="seventhPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+
+    <p>
+      The following example shows "left" text alignment of the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.eigthPara {
+  text-align-last: left;
+}
+
+Output: </pre
+      >
+      <p class="eigthPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+    <p><strong>Question: </strong> What is the difference between "auto" and "left" value of text-align-last property?</p>
+
+    <p>
+      The following example shows "right" text alignment of the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.ninthPara {
+  text-align-last: right;
+}
+
+Output: </pre
+      >
+      <p class="ninthPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+
+    <p>
+      The following example shows "center" text alignment of the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.tenthPara {
+  text-align-last: center;
+}
+
+Output: </pre
+      >
+      <p class="tenthPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+
+    <p>
+      The following example shows "justify" text alignment means stretches the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.eleventhPara {
+  text-align-last: justify;
+}
+
+Output: </pre
+      >
+      <p class="eleventhPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+
+    <p>
+      The following example shows "start" text alignment means stretches the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.twelvethPara {
+  text-align-last: start;
+}
+
+Output: </pre
+      >
+      <p class="twelvethPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+
+    <p>
+      The following example shows "end" text alignment means stretches the last line of
+      paragraph:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.thirteenthPara {
+  text-align-last: end;
+}
+
+Output: </pre
+      >
+      <p class="thirteenthPara">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et tempora
+        iusto officiis ipsum, numquam fuga voluptatibus delectus perspiciatis
+        in, accusamus nam eaque provident ab nulla aperiam iste asperiores, illo
+        nihil. Mollitia, repellat! Minima reprehenderit aut iusto delectus
+        architecto cupiditate maxime quis temporibus at repudiandae. Aspernatur
+        illum perferendis cum maiores placeat non dolorem eligendi rerum
+        explicabo recusandae porro, a fugit delectus impedit, tenetur dicta enim
+        quis beatae deserunt, voluptatem debitis error fugiat asperiores.
+        Tempore explicabo consectetur dignissimos autem iure magni impedit
+        doloremque corporis, suscipit incidunt atque. Fuga nobis recusandae
+        debitis officiis natus iste sit saepe non id, aut maiores voluptatem
+        autem ea at explicabo odio neque itaque. Ducimus, culpa vitae ut
+        deserunt magni nulla unde ipsum distinctio ad facilis aspernatur
+        possimus atque, quia, maiores qui nostrum ea quis praesentium a esse
+        consequuntur iure harum! Nostrum repellat suscipit maxime minima
+        incidunt voluptas, dolorem placeat rerum, ullam inventore ea doloribus
+        aliquid architecto voluptatibus!
+      </p>
+    </div>
+    <p><strong>Question: </strong> What is the difference between "justify" and "end" value of text-align-last property?</p>
   </body>
 </html>

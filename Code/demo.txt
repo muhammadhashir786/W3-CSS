@@ -1,0 +1,28 @@
+<h3>a. The CSS Text Align Property</h3>
+    <p>
+      The CSS text-align property defines the horizontal alignment of the text
+      on the screen.
+    </p>
+    <p><strong>Values of Text-Align Property:</strong></p>
+    <p>There are 4 values of text-align property:</p>
+    <ol>
+      <li>left - Aligns the text to the left</li>
+      <li>right - Aligns the text to the right</li>
+      <li>center - Centers the text</li>
+      <li>justify - Stretches the lines so that each line has equal width</li>
+    </ol>
+    <p>The following example shows left text alignment</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.thirdPara {
+  text-align: left;
+}
+
+Output: </pre
+      >
+      <p class="thirdPara">
+        this line is aligned text "left" in CSS which is also by default.
+      </p>
+    </div>
