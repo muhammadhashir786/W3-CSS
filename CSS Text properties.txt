@@ -1,3 +1,14 @@
+Chapter: Text Properties
+
+Sections in this chpater:
+
+Section 01:	Text Properties
+Section 02:	CSS Text Alignment
+Section 03:	CSS Text Decoration
+Section 04:	CSS Text Transformation
+Section 05:	CSS Text Spacing
+Section 06:	CSS Text Shadow
+
 Section 01:	Text Properties
 
 There are many text properties that are used to style texts.
@@ -629,7 +640,59 @@ Property                Description
 4. white-space	        Specifies how to handle white-space inside an element
 5. word-spacing	        Specifies the space between words in a text
 
+  --------------------------------------------------------------------------------------------------------------------------------------------------------  
 
+Section 06:	CSS Text Shadow
 
-Values of Text-Transform Property:
+in this section we will learn 3 values of text-shadow property.  
+
+1. Text Shadow Property:
+
+The text-shadow property adds shadow to text.
+In its simplest use, you only specify the horizontal in x-axis and the vertical shadow in y-axis .
+In addition, you can add a shadow color and blur effect.
+
+Syntax:        
+
+h1 {
+  text-shadow: x-axis y-axis;
+}
+
+Syntax of all values:
+
+h1 {
+  text-shadow: x-axis y-axis blur color;
+}
+
+Values of Text-Shadow Property:
+
+there are 3 values of text-shadow property.
+
+1. define dimensions x-axis and y-axis
+2. define color of the shadow
+3. define blur effect to the shadow
+
+Example:
+
+Define Shadow in x-axis and y-axis:
+
+h1 {
+  text-shadow: 2px 2px;
+}
+
+Define Color of Shadow:
+
+Horizontal and vertical shadow, with color:
+
+h1 {
+  text-shadow: 2px 2px red;
+}
+
+Define Blur Effect to the Shadow:
+
+Horizontal and vertical shadow, with color and blur effect:
+
+h1 {
+  text-shadow: 2px 2px 5px red;
+}
 
