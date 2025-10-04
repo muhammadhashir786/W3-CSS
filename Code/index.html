@@ -15,6 +15,9 @@
       <li>Color property</li>
       <li>Background-color property</li>
     </ol>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
     <h3>a. The CSS Color Property</h3>
     <p>The CSS color property defines the text color of an HTML element</p>
     <div class="codeBorder">
@@ -82,6 +85,8 @@ Output: the output is that all the text color will changed to orange that displa
     <br />
     <br />
     <hr />
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <h2>2. Text Alignment</h2>
     <p>There are 5 text properties to align the text in css:</p>
@@ -171,6 +176,8 @@ Output: </pre
       left and justify?
     </p>
 
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
     <h3>b. The CSS Text-Align-Last Property:</h3>
     <p>
       The text-align-last property defines the text alignment of last line that
@@ -256,7 +263,10 @@ Output: </pre
         aliquid architecto voluptatibus!
       </p>
     </div>
-    <p><strong>Question: </strong> What is the difference between "auto" and "left" value of text-align-last property?</p>
+    <p>
+      <strong>Question: </strong> What is the difference between "auto" and
+      "left" value of text-align-last property?
+    </p>
 
     <p>
       The following example shows "right" text alignment of the last line of
@@ -329,8 +339,8 @@ Output: </pre
     </div>
 
     <p>
-      The following example shows "justify" text alignment means stretches the last line of
-      paragraph:
+      The following example shows "justify" text alignment means stretches the
+      last line of paragraph:
     </p>
     <div class="codeBorder">
       <pre>
@@ -364,8 +374,8 @@ Output: </pre
     </div>
 
     <p>
-      The following example shows "start" text alignment means stretches the last line of
-      paragraph:
+      The following example shows "start" text alignment means stretches the
+      last line of paragraph:
     </p>
     <div class="codeBorder">
       <pre>
@@ -399,8 +409,8 @@ Output: </pre
     </div>
 
     <p>
-      The following example shows "end" text alignment means stretches the last line of
-      paragraph:
+      The following example shows "end" text alignment means stretches the last
+      line of paragraph:
     </p>
     <div class="codeBorder">
       <pre>
@@ -432,6 +442,297 @@ Output: </pre
         aliquid architecto voluptatibus!
       </p>
     </div>
-    <p><strong>Question: </strong> What is the difference between "justify" and "end" value of text-align-last property?</p>
+    <p>
+      <strong>Question: </strong> What is the difference between "justify" and
+      "end" value of text-align-last property?
+    </p>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <h3>c. The CSS Vertical-Align Property</h3>
+    <p>
+      The CSS vertical-align property defines the vertical alignment of an HTML
+      element.
+    </p>
+    <p><strong>Values of Vertical-Align Property:</strong></p>
+    <p>There are 9 values of vertical-align property:</p>
+    <ol>
+      <li>
+        baseline - Default value. The element is aligned with the baseline of
+        the parent
+      </li>
+      <li>
+        length/% - Raises or lower an element by the specified length or percent
+      </li>
+      <li>
+        sub - The element is aligned with the subscript baseline of the parent
+      </li>
+      <li>
+        super - The element is aligned with the superscript baseline of the
+        parent
+      </li>
+      <li>
+        top - The element is aligned with the top of the tallest element on the
+        line
+      </li>
+      <li>
+        text-top - The element is aligned with the top of the parent element's
+        font
+      </li>
+      <li>
+        middle - The element is placed in the middle of the parent element
+      </li>
+      <li>
+        bottom - The element is aligned with the lowest element on the line
+      </li>
+      <li>
+        text-bottom - The element is aligned with the bottom of the parent
+        element's font
+      </li>
+    </ol>
+
+    <p>Set the vertical align "auto" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.fourteenthPara {
+  vertical-align: auto;
+  border: 1px solid blue;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "auto" using CSS in the small red
+        box at the end of this line.
+        <img class="fourteenthPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "baseline" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.fifteenthPara {
+  vertical-align: baseline;
+  border: 1px solid blue;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "baseline" using CSS in the small
+        red box at the end of this line.
+        <img class="fifteenthPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+    <p>
+      <strong>Question: </strong>What is the difference between "auto" and
+      "baseline" value of vertical-align property?
+    </p>
+
+    <p>Set the vertical align "bottom" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.sixteenthPara {
+  vertical-align: bottom;
+  border: 1px solid blue;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "bottom" using CSS in the small
+        red box at the end of this line.
+        <img class="sixteenthPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "middle" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.seventeenthPara {
+  vertical-align: middle;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "middle" using CSS in the small
+        red box at the end of this line.
+        <img class="seventeenthPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "sub" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.eighteenthPara {
+  vertical-align: sub;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "sub" using CSS in the small red
+        box at the end of this line.
+        <img class="eighteenthPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "super" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.ninteenthPara {
+  vertical-align: super;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "super" using CSS in the small red
+        box at the end of this line.
+        <img class="ninteenthPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "text-bottom" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.twenteethPara {
+  vertical-align: text-bottom;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "text-bottom" using CSS in the
+        small red box at the end of this line.
+        <img class="twenteethPara" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "text-top" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.para21 {
+  vertical-align: text-top;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "text-top" using CSS in the small
+        red box at the end of this line.
+        <img class="para21" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>Set the vertical align "top" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.para22 {
+  vertical-align: top;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "top" using CSS in the small red
+        box at the end of this line.
+        <img class="para22" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <p>
+      Set the vertical align "-webkit-baseline-middle" of an image in a text:
+    </p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.para23 {
+  vertical-align: -webkit-baseline-middle;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "-webkit-baseline-middle" using
+        CSS in the small red box at the end of this line.
+        <img class="para23" src="box.png" height="8px" alt="" />
+      </p>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <h3>d. The CSS Text Direction Property</h3>
+    <p>
+      The CSS text-direction property defines the text direction/writing
+      direction within a block-level element.
+    </p>
+
+    <p>
+      <strong>Tip:</strong> Use this property together with the unicode-bidi
+      property to set or return whether the text should be overridden to support
+      multiple languages in the same document.
+    </p>
+
+    <p>The following examples shows the direction of text is right to left</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.para24 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+Output: </pre
+      >
+      <p class="para24">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime
+        molestias pariatur eaque quisquam illo nam quidem consectetur atque quos
+        cumque sapiente molestiae nobis et quod commodi ducimus amet, earum
+        architecto tempore maiores corporis exercitationem? Omnis ab explicabo
+        eaque nihil. Velit praesentium quis nesciunt. Eveniet nesciunt,
+        veritatis eos maxime quia adipisci.
+      </p>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <h2>3. Text Decoration</h2>
+    <h3>a. The CSS Text-Decoration Property</h3>
+    <p>The CSS text-decoration property defines the decorative lines of text.</p>
+    <p>it is used to control the appearance of decorative lines on text.</p>
+    <p><strong>Note:</strong>The main property in this section is CSS text-decoration property.</p>
+    <p>we can define all the values of line decoration in CSS text-decoration property</p>
+    <p>it is required to define the type of line in the CSS Text-Decoration Property</p>
+
+    <p>It is a shorthand property for the following individual properties:</p>
+    <p>we will learn how to use this shorthand property in CSS in the last of this section</p>
+    <ol type="a">
+      <li>text-decoration-line</li>
+      <li>text-decoration-color</li>
+      <li>text-decoration-style</li>
+      <li>text-decoration-thickness</li>
+    </ol>
   </body>
 </html>

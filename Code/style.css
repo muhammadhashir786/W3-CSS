@@ -65,3 +65,52 @@
 .thirteenthPara {
   text-align-last: end;
 }
+
+.box {
+  border: 1px solid blue;
+}
+
+.fourteenthPara {
+  vertical-align: auto;
+}
+
+.fifteenthPara {
+  vertical-align: baseline;
+}
+
+.sixteenthPara {
+  vertical-align: bottom;
+}
+
+.seventeenthPara {
+  vertical-align: middle;
+}
+
+.eighteenthPara {
+  vertical-align: sub;
+}
+
+.ninteenthPara {
+  vertical-align: super;
+}
+
+.twenteethPara {
+  vertical-align: text-bottom;
+}
+
+.para21 {
+  vertical-align: text-top;
+}
+
+.para22 {
+  vertical-align: top;
+}
+
+.para23 {
+  vertical-align: -webkit-baseline-middle;
+}
+
+.para24 {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}

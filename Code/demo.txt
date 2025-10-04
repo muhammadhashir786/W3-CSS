@@ -11,6 +11,7 @@
       <li>center - Centers the text</li>
       <li>justify - Stretches the lines so that each line has equal width</li>
     </ol>
+    
     <p>The following example shows left text alignment</p>
     <div class="codeBorder">
       <pre>
@@ -24,5 +25,28 @@ Output: </pre
       >
       <p class="thirdPara">
         this line is aligned text "left" in CSS which is also by default.
+      </p>
+    </div>
+
+
+
+
+
+
+
+<p>Set the vertical align "sub" of an image in a text:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.eighteenthPara {
+  vertical-align: sub;
+}
+
+Output: </pre
+      >
+      <p class="box">
+        the property set to vertical-align is "sub" using CSS in the small red box at the end of this line.
+        <img class="eighteenthPara" src="box.png" height="8px" alt="">
       </p>
     </div>
