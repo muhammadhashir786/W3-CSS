@@ -696,3 +696,12 @@ h1 {
   text-shadow: 2px 2px 5px red;
 }
 
+Summary of Section 06:
+
+The CSS Text Shadow Properties:
+
+Property                Description
+
+1. text-shadow	        Specifies the shadow effect added to text
+
+Values                  2 dimensions blurr color
