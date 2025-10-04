@@ -40,6 +40,10 @@ Output:</pre
       The CSS background-color property defines the background color of an HTML
       element
     </p>
+    <p>
+      The background-color property is not the text property, it is used to
+      change the background color of any HTML element.
+    </p>
     <div class="codeBorder">
       <pre>
 Code:
@@ -60,7 +64,9 @@ Output:</pre
         Look at CSS Color Values for a complete list of possible color values.
       </p>
       link:
-      <a href="https://www.w3schools.com/cssref/css_colors_legal.php"
+      <a
+        href="https://www.w3schools.com/cssref/css_colors_legal.php"
+        target="_blank"
         >All About Color</a
       >
     </div>
@@ -719,20 +725,210 @@ Output: </pre
     <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <h2>3. Text Decoration</h2>
+    <p>
+      In the text decoration there is only 1 main property, which is called the
+      "text-decoration" property that is used to decore the text
+    </p>
+    <p>but Text Decoration means add lines in the text</p>
+
     <h3>a. The CSS Text-Decoration Property</h3>
-    <p>The CSS text-decoration property defines the decorative lines of text.</p>
+    <p>
+      The CSS text-decoration property defines the decorative lines to the text.
+    </p>
     <p>it is used to control the appearance of decorative lines on text.</p>
-    <p><strong>Note:</strong>The main property in this section is CSS text-decoration property.</p>
-    <p>we can define all the values of line decoration in CSS text-decoration property</p>
-    <p>it is required to define the type of line in the CSS Text-Decoration Property</p>
+
+    <p>
+      <strong>Note:</strong>The main property is CSS text-decoration property.
+    </p>
+    <p>
+      we can define all the values of line decoration in CSS text-decoration
+      property
+    </p>
+    <p>
+      but there is a keyword "line" that will add with "text-decoration"
+      property, means "text-decoration-line" property
+    </p>
 
     <p>It is a shorthand property for the following individual properties:</p>
-    <p>we will learn how to use this shorthand property in CSS in the last of this section</p>
+    <p>
+      we will learn how to use this shorthand property in CSS in the last of
+      this section
+    </p>
     <ol type="a">
-      <li>text-decoration-line</li>
-      <li>text-decoration-color</li>
-      <li>text-decoration-style</li>
-      <li>text-decoration-thickness</li>
+      <li>text-decoration-line - required</li>
+      <li>text-decoration-color - optional</li>
+      <li>text-decoration-style - optional</li>
+      <li>text-decoration-thickness - optional</li>
     </ol>
+    <p>
+      <strong>Note: </strong>The "text-decoration-line" property is required to
+      define the type of line you need to decore text in the CSS
+      "Text-Decoration" Property
+    </p>
+
+    <h3>a. The CSS Text-Decoration-Line Property</h3>
+    <p>
+      The CSS text-decoration-line property adds different types of decorative
+      lines to the text.
+    </p>
+    <p><strong>Values of Text-Decoration-Line Property:</strong></p>
+    <p>there are 4 values of text-decoration-line property:</p>
+    <ol>
+      <li>none - Default value. Displays no decoration line</li>
+      <li>underline - The decoration line is displayed under the text</li>
+      <li>overline - The decoration line is displayed over the text</li>
+      <li>
+        line-through - The decoration line is displayed through the text/from
+        the center of text
+      </li>
+    </ol>
+    <p>
+      <strong>Tip: </strong>You can combine multiple values, like overline and
+      underline to display lines both over and under a text.
+    </p>
+
+    <p>The following example shows values of text-decoration-line property:</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.para25 {
+  text-decoration-line: overline;
+}
+
+Output: </pre
+      >
+      <p class="para25">
+        the value of "text-decoration-line" is set to "overline".
+      </p>
+
+      <pre>
+Code:
+
+.para26 {
+  text-decoration-line: line-through;
+}
+
+Output: </pre
+      >
+      <p class="para26">
+        the value of "text-decoration-line" is set to "line-through".
+      </p>
+
+      <pre>
+Code:
+
+.para27 {
+  text-decoration-line: underline;
+}
+
+Output: </pre
+      >
+      <p class="para27">
+        the value of "text-decoration-line" is set to "underline".
+      </p>
+
+      <pre>
+Code:
+
+.para28 {
+  text-decoration-line: none;
+}
+
+Output: </pre
+      >
+      <p class="para28">
+        the value of "text-decoration-line" is set to "none".
+      </p>
+
+      <pre>
+Code:
+
+.para29 {
+  text-decoration-line: overline underline line-through;
+}
+
+Output: </pre
+      >
+      <p class="para29">
+        the value of "text-decoration-line" is set to "overline underline
+        line-through".
+      </p>
+    </div>
+
+    <h3>b. The CSS Text-Decoration-Color Property</h3>
+    <p>
+      The CSS text-decoration-color property defines the color of the decorative
+      line
+    </p>
+
+    <p>The following example shows the color of text decorative line</p>
+    <div class="codeBorder">
+      <pre>
+Code:
+
+.para30 {
+  text-decoration-line: overline;         /* longest method */
+  text-decoration-color: red;
+
+  text-decoration-line: overline red;   /* we can not write like this    shortest method */
+}
+
+Output: </pre
+      >
+      <p class="para30">
+        in this example the decoration line is set to "overline" and color is
+        set to "red"
+      </p>
+
+      <pre>
+Code:
+
+.line31 {
+  text-decoration-line: underline;         /* longest method */
+  text-decoration-color: blue;
+
+  text-decoration-line: underline blue;   /* we can not write like this    shortest method */
+}
+
+Output: </pre
+      >
+      <p class="line31">
+        in this example the decoration line is set to "underline" and color is
+        set to "blue"
+      </p>
+
+      <pre>
+Code:
+
+.line32 {
+  text-decoration-line: line-through underline;         /* longest method */
+  text-decoration-color: greenyellow;
+}
+
+Output: </pre
+      >
+      <p class="line32">
+        in this example the decoration line is set to "line-through" and color is
+        set to "greenyellow"
+      </p>
+
+      <pre>
+Code:
+
+line will not display in this example because value is set to "none"
+
+.line33 {
+  text-decoration-line: none;         /* longest method */
+  text-decoration-color: orange;
+}
+
+Output: </pre
+      >
+      <p class="line33">
+        in this example the decoration line is set to "none and color is
+        set to "orange"
+      </p>
+    </div>
   </body>
 </html>
