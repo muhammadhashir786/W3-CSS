@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Decoration | CSS</title>
+    <link rel="stylesheet" href="text_decoration.css">
+  </head>
+  <body>
+    <h1>Text Decoration</h1>
+    <h2>Properties & Values</h2>
+    <ol>
+      <li>text-decoration-line</li>
+      <ol type="a">
+        <li>none - Default value. Displays no decoration line</li>
+        <li>overline - The decoration line is displayed over the text</li>
+        <li>underline - The decoration line is displayed under the text</li>
+        <li>
+          line-through - The decoration line is displayed through the text/from
+          the center of text
+        </li>
+      </ol>
+
+      <br>
+
+      <li>text-decoration-color</li>
+      <ol type="a">
+        <li>give any color to the decorative line like {red, rgb(29, 173, 0), #0011ff}</li>
+      </ol>
+
+      <br>
+
+      <li>text-decoration-style</li>
+      <ol type="a">
+        <li>solid - Default value. Displays single line</li>
+        <li>double - Displays double line</li>
+        <li>dotted - Displays dotted line</li>
+        <li>dashed - Displays dashed line</li>
+        <li>wavy - Displays wavy line</li>
+      </ol>
+
+      <br>
+
+      <li>text-decoration-thickness</li>
+      <ol type="a">
+        <li>thickness value defines in the unit of length like (px, em or %).</li>
+      </ol>
+    </ol>
+
+    <h2>1. Text Decoration Line Property</h2>
+    <div class="outputBorder">
+    <p class="line1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(none)</span><br>
+    <p class="line2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(overline)</span><br>
+    <p class="line3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(underline)</span><br>
+    <p class="line4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(line-through)</span><br>
+    </div>
+
+    <h2>2. Text Decoration Color Property</h2>
+    <div class="outputBorder">
+    <p class="line5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(overline, red)</span><br>
+    <p class="line6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(underline, rgb(29, 173, 0))</span><br>
+    <p class="line7">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(line-through, 0011ff)</span><br>
+    </div>
+
+    <h2>3. Text Decoration Style Property</h2>
+    <div class="outputBorder">
+    <p class="line8">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(line-through, solid)</span><br>
+    <p class="line9">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(overline, double)</span><br>
+    <p class="line10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(underline, dotted)</span><br>
+    <p class="line11">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(line-through overline, dashed)</span><br>
+    <p class="line12">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(line-through overline underline, wavy)</span><br>
+    </div>
+
+    <h2>4. Text Decoration Thickness Property</h2>
+    <div class="outputBorder">
+    <p class="line13">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(overline, 3px)</span><br>
+    <p class="line14">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(underline, 0.5em)</span><br>
+    <p class="line15">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit iusto cumque unde.</p><span>(line-through, 100%)</span><br>
+    </div>
+  </body>
+</html>
