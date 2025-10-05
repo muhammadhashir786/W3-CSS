@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Spacing | CSS</title>
+    <link rel="stylesheet" href="text_spacing.css" />
+  </head>
+  <body>
+    <h1>Properties of Text Spacing</h1>
+    <p>There are 5 properties to control text spacing</p>
+    <ol>
+      <li>text-indent</li>
+      <li>letter-spacing</li>
+      <li>line-height</li>
+      <li>word-spacing</li>
+      <li>white-space</li>
+    </ol>
+
+    <h2>1. Text Indent Property</h2>
+    <p>
+      Defines the indentation (spaces from the left) of the first line of text.
+    </p>
+    <p>
+      <strong>Tip: </strong>Negative values are allowed. The first line will be
+      indented to the left if the value is negative.
+    </p>
+
+    <div class="main">
+      <p><strong> Code & Output: </strong></p>
+      <p>{text-indent: 350px;}</p>
+      <div class="codeBox">
+        <p class="indent1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          quasi, magni porro doloremque beatae voluptas incidunt laudantium
+          possimus veritatis molestiae commodi alias similique, laborum
+          voluptate tempora. Exercitationem autem veniam reprehenderit ut earum
+          impedit recusandae maxime eius. Voluptatem fuga iste doloremque
+          reprehenderit suscipit voluptatibus autem provident quos est sapiente
+          tempora harum error soluta, dolore quo! A quod provident, eos sapiente
+          porro aut earum soluta quas neque rerum modi laborum sit blanditiis
+          laudantium facere deleniti maxime, praesentium debitis maiores? Alias
+          reprehenderit deserunt asperiores, praesentium ab quo, voluptas libero
+          doloremque dicta quaerat, error id?
+        </p>
+      </div>
+    </div>
+
+    <h2>2. Letter Spacing Property</h2>
+    <p>Defines the spaces between the characters of text.</p>
+    <p><strong>Tip: </strong>Negative values are allowed.</p>
+
+    <div class="main">
+      <p><strong> Code & Output: </strong></p>
+      <p>{letter-spacing: 5px;}</p>
+      <div class="codeBox">
+        <p class="indent2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+
+      <p>{letter-spacing: -2px;}</p>
+      <div class="codeBox">
+        <p class="indent3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+    </div>
+
+    <h2>3. Line Height Property</h2>
+    <p>Defines the space between the lines of text.</p>
+    <p><strong>Tip: </strong>Negative values are not allowed.</p>
+
+    <div class="main">
+      <p><strong> Code & Output: </strong></p>
+      <p>{line-height: 0.8;}</p>
+      <div class="codeBox">
+        <p class="indent4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+
+      <p>{line-height: 1.8;}</p>
+      <div class="codeBox">
+        <p class="indent5">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+
+      <p>{line-height: -1.8;}</p>
+      <p>if we give negative values, it will display as a normal line height</p>
+      <div class="codeBox">
+        <p class="indent6">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+    </div>
+
+    <h2>4. Word Spacing Property</h2>
+    <p>Defines the space between the words in a text.</p>
+    <p><strong>Tip: </strong>Negative values are allowed.</p>
+
+    <div class="main">
+      <p><strong> Code & Output: </strong></p>
+      <p>increase the spaces between the words</p>
+      <p>{word-spacing: 10px;}</p>
+      <div class="codeBox">
+        <p class="indent7">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+
+      <p>decrease the spaces between the words</p>
+      <p>{word-spacing: -2px;}</p>
+      <div class="codeBox">
+        <p class="indent8">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+    </div>
+
+    <h2>5. White Space Property</h2>
+    <p>Defines how white-space inside an element is handled in a text.</p>
+    <p><strong>Syntax: </strong>{white-space: value;}</p>
+    <p>There are 5 values of CSS white-space property:</p>
+    <ol>
+      <li>normal</li>
+      <li>nowrap</li>
+      <li>pre</li>
+      <li>pre-line</li>
+      <li>pre-wrap</li>
+    </ol>
+
+    <div class="main">
+      <p><strong> Code & Output: </strong></p>
+      <p>{white-space: normal;}</p>
+      <div class="codeBox">
+        <p class="indent9">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+      
+      <p>{white-space: nowrap;}</p>
+      <div class="codeBox">
+        <p class="indent10">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+
+      <p>{white-space: pre;}</p>
+      <div class="codeBox">
+        <p class="indent11">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+      
+      <p>{white-space: pre-line;}</p>
+      <div class="codeBox">
+        <p class="indent12">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+      
+      <p>{white-space: pre-wrap;}</p>
+      <div class="codeBox">
+        <p class="indent13">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>
+    </div>
+    <p><strong>Question: </strong> What is the difference between "pre" and "pre-wrap" value of "white-space" property?</p>
+    
+  </body>
+</html>

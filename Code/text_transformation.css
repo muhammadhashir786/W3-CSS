@@ -1,0 +1,18 @@
+.outputBorder {
+    border: 2px solid black;
+}
+
+.line1 {
+    text-transform: none;
+}
+
+.line2 {
+    text-transform: capitalize;
+}
+.line3 {
+    text-transform: lowercase;
+}
+.line4 {
+    text-transform: uppercase;
+}
+

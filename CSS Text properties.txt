@@ -456,7 +456,7 @@ A Small Tip on Links:
 
 All links in HTML are underlined by default.
 Sometimes you see that links are styled with no underline.
-The noneo value of text-decoration property is used in CSS to remove the underline from the links, like this:
+The none value of text-decoration property is used in CSS to remove the underline from the links, like this:
 
 Example:
 

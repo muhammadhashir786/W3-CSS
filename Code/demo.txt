@@ -50,3 +50,24 @@ Output: </pre
         <img class="eighteenthPara" src="box.png" height="8px" alt="">
       </p>
     </div>
+
+
+
+
+
+<h2>3. Line Height Property</h2>
+    <p>Defines the space between the lines of text.</p>
+    <p><strong>Tip: </strong>Negative values are not allowed.</p>
+
+    <div class="main">
+      <p><strong> Code & Output: </strong></p>
+      <p>{line-height: 0.8;}</p>
+      <div class="codeBox">
+        <p class="indent4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt
+          consequuntur error sint obcaecati mollitia hic saepe modi asperiores
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+          voluptates hic, exercitationem quos sunt incidunt ad similique maxime
+          deleniti enim, sint dignissimos et magni cupiditate.
+        </p>
+      </div>

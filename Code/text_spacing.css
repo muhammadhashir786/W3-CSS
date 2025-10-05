@@ -1,0 +1,74 @@
+body {
+    margin-left: 50px
+}
+
+.main {
+  padding: 8px 20px;
+  box-shadow: none !important;
+  background-color: #E7E9EB;
+  border-radius:5px;
+  width: 93%;
+  /* margin-left: 160px; */
+}
+
+.codeBox {
+    border-left: 4px solid #04AA6D;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+    width: auto;
+    background-color: #fff;color: #000;
+    padding: 8px 12px;
+    word-wrap: break-word;
+}
+
+.indent1 {
+    text-indent: 350px;
+}
+
+.indent2 {
+    letter-spacing: 5px;
+}
+
+.indent3 {
+    letter-spacing: -2px;
+}
+
+.indent4 {
+    line-height: 0.8;
+}
+
+.indent5 {
+    line-height: 1.8;
+}
+
+.indent6 {
+    line-height: -1.8;
+}
+
+.indent7 {
+    word-spacing: 10px;
+}
+
+.indent8 {
+    word-spacing: -2px;
+}
+
+.indent9 {
+    white-space: normal;
+}
+
+.indent10 {
+    white-space: nowrap;
+}
+
+.indent11 {
+    white-space: pre;
+}
+
+.indent12 {
+    white-space: pre-line;
+}
+
+.indent13 {
+    white-space: pre-wrap;
+}
