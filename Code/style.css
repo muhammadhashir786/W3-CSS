@@ -1,9 +1,9 @@
 .codeBorder {
-    border: 2px solid black;
+  border: 2px solid black;
 }
 
 .firstPara {
-    color: blue;
+  color: blue;
 }
 
 /* this is not working */
@@ -13,17 +13,17 @@
 } */
 
 .secondPara {
-    background-color: #2aff00;
+  background-color: #2aff00;
 }
 
 /* if I define the color orange in body, then all the texts that are present under the body tag will be orange */
-    
+
 /* body {
   color: orange;
 } */
 
 .thirdPara {
-    text-align: left;
+  text-align: left;
 }
 
 .fourthPara {
@@ -113,4 +113,48 @@
 .para24 {
   direction: rtl;
   unicode-bidi: bidi-override;
+}
+
+.para25 {
+  text-decoration-line: overline;
+}
+
+.para26 {
+  text-decoration-line: line-through;
+}
+
+.para27 {
+  text-decoration-line: underline;
+}
+
+.para28 {
+  text-decoration-line: none;
+}
+
+.para29 {
+  text-decoration-line: overline underline line-through;
+}
+
+.para30 {
+  text-decoration-line: overline;         /* longest method */
+  text-decoration-color: red;
+
+  text-decoration-line: overline red;   /* we can not write like this    shortest method */
+}
+
+.line31 {
+  text-decoration-line: underline;         /* longest method */
+  text-decoration-color: blue;
+
+  text-decoration-line: underline blue;   /* we can not write like this    shortest method */
+}
+
+.line32 {
+  text-decoration-line: line-through underline;         /* longest method */
+  text-decoration-color: rgb(36, 198, 0);
+}
+
+.line33 {
+  text-decoration-line: none;         /* longest method */
+  text-decoration-color: orange;
 }
