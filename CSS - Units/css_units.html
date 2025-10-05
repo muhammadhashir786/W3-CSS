@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS - Units of CSS</title>
+    <link rel="stylesheet" href="css_units.css" />
+  </head>
+  <body>
+    <h1>Units of CSS</h1>
+    <p>CSS has several different units for expressing a length.</p>
+    <p>
+      Many CSS properties take "length" values, such as width, margin, padding,
+      font-size, etc.
+    </p>
+    <h2>What is Length?</h2>
+    <p>Length is a number followed by a length unit, such as 10px, 2em, etc.</p>
+    <p>For some CSS properties, negative lengths are allowed.</p>
+    <h3>Types of Length Units</h3>
+    <p>There are two types of length units:</p>
+    <ol>
+      <li>Absolute</li>
+      <li>Relative</li>
+    </ol>
+
+    <p>
+      <strong>Note: </strong>A whitespace cannot appear between the number and
+      the unit. However, if the value is 0, the unit can be omitted.
+    </p>
+
+    <h2>Example of Length Values In CSS:</h2>
+    <div class="mainBox">
+      <p><strong>Code & Output:</strong></p>
+      <p>Set different length values, in "px" (pixels):</p>
+      <pre>
+{
+    font-size: 20px;
+    line-height: 50px;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}        </pre
+      >
+      <div class="outputBox">
+        <p class="line1">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque id
+          ratione asperiores aspernatur, eligendi, adipisci quis aut animi
+          beatae explicabo praesentium dolorum, mollitia repellat fugit.
+        </p>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>Absolute Length Units</h2>
+    <p>
+      The absolute length units are fixed and a length expressed in any of these
+      will appear as exactly that size.
+    </p>
+    <p>
+      Absolute length units are not recommended for use on screen, because
+      screen sizes vary so much. However, they can be used if the output medium
+      is known, such as for print layout.
+    </p>
+
+    <table>
+      <thead>
+        <tr class="td1">
+          <th>Unit</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="td1 tdColor">
+          <td>cm</td>
+          <td>centimeters</td>
+        </tr>
+        <tr class="td1">
+          <td>mm</td>
+          <td>millimeters</td>
+        </tr>
+        <tr class="td1 tdColor">
+          <td>in</td>
+          <td>inches (1in = 96px = 2.54cm)</td>
+        </tr>
+        <tr class="td1">
+          <td>px *</td>
+          <td>pixels (1px = 1/96th of 1in)</td>
+        </tr>
+        <tr class="td1 tdColor">
+          <td>pt</td>
+          <td>points (1pt = 1/72 of 1in)</td>
+        </tr>
+        <tr class="td1">
+          <td>pc</td>
+          <td>picas (1pc = 12 pt)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      * Pixels (px) are relative to the viewing device. For low-dpi devices, 1px
+      is one device pixel (dot) of the display. For printers and high resolution
+      screens 1px implies multiple device pixels.
+    </p>
+
+    <br />
+    <hr />
+    <br />
+
+    <h2>Relative Length Units</h2>
+    <p>
+      Relative length units specify a length relative to another length
+      property. Relative length units scale better between different rendering
+      medium.
+    </p>
+
+    <table>
+      <thead>
+        <tr class="td1">
+          <th>Unit</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="td1 tdColor">
+          <td>em</td>
+          <td>
+            Relative to the font-size of the element (2em means 2 times the size
+            of the current font)
+          </td>
+        </tr>
+        <tr class="td1">
+          <td>ex</td>
+          <td>Relative to the x-height of the current font (rarely used)</td>
+        </tr>
+        <tr class="td1 tdColor">
+          <td>ch</td>
+          <td>Relative to the width of the "0" (zero)</td>
+        </tr>
+        <tr class="td1">
+          <td>rem</td>
+          <td>Relative to font-size of the root element</td>
+        </tr>
+        <tr class="td1 tdColor">
+          <td>vw</td>
+          <td>Relative to 1% of the width of the viewport*</td>
+        </tr>
+        <tr class="td1">
+          <td>vh</td>
+          <td>Relative to 1% of the height of the viewport*</td>
+        </tr>
+        <tr class="td1 tdColor">
+          <td>vmin</td>
+          <td>Relative to 1% of viewport's* smaller dimension</td>
+        </tr>
+        <tr class="td1">
+          <td>vmax</td>
+          <td>Relative to 1% of viewport's* larger dimension</td>
+        </tr>
+        <tr class="td1 tdColor">
+          <td>%</td>
+          <td>Relative to the parent element</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="tipBox">
+      <p>
+        <strong>Tip: </strong>The em and rem units are practical in creating
+        perfectly scalable layout!
+      </p>
+      <p>
+        * Viewport = the browser window size. If the viewport is 50cm wide, 1vw
+        = 0.5cm.
+      </p>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>Browser Support</h2>
+    <p>
+      The numbers in the table specify the first browser version that fully
+      supports the length unit.
+    </p>
+    <img src="Browser Support Length Units.png" height="300px">
+  </body>
+</html>

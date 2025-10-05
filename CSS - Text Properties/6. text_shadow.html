@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Shadow | CSS</title>
-    <link rel="stylesheet" href="text_shadow.css">
+    <title>CSS | Text Shadow</title>
+    <link rel="stylesheet" href="6. text_shadow.css">
 </head>
 <body>
-    <h1>CSS Text-Shadow Property</h1>
-    <p>The text-shadow property adds shadow to the text.</p>
-    <p>In its simplest use, you only specify the horizontal and the vertical shadow.</p>
-    <p><strong>Syntax for shadow: </strong>{text-shadow: x-axis y-axis;}</p>
-    <p>In addition, you can add a shadow color and blur effect.</p>
-    <p><strong>Syntax for all values: </strong>{text-shadow: x-axis y-axis blur color;}</p>
+    <h1>Text-Shadow Property</h1>
+    <p>The CSS text-shadow property adds shadow to the text.</p>
+    <p>We only specify the horizontal and vertical shadow.</p>
     
     <h2>Values of Text-Shadow Property</h2>
     <p>There are 3 values of text-shadow property:</p>
@@ -22,7 +19,15 @@
       <li>blur - define blur effect to the shadow</li>
     </ol>
 
-    <h3>Define Only Dimension of Shadow:</h3>
+    <p><strong>Syntax for Dimensions: </strong>{text-shadow: x-axis y-axis;}</p>
+    <p>In addition, you can add a shadow color and blur effect.</p>
+    <p><strong>Syntax for all values: </strong>{text-shadow: x-axis y-axis blur color;}</p>
+
+    <br>
+    <hr>
+    <br>
+
+    <h3>Define Dimensions of Shadow:</h3>
     <div class="main">
       <p><strong> Code & Output: </strong></p>
       <p>{text-shadow: 2px 2px;}</p>
@@ -58,21 +63,23 @@
       </div>
     </div>
 
+    <br>
+    <br>
+    <hr>
+
     <h2>4 Shadow Examples:</h2>
     <div class="main">
       <p><strong> Code & Output: </strong></p>
-      <p>{ color: white; text-shadow: 2px 2px 4px #000000; }</p>
       <p>Text-shadow on a white text:</p>
+      <p>{ color: white; text-shadow: 2px 2px 4px #000000; }</p>
       <div class="codeBox">
         <p class="line4">
           I am a Full-Stack Web Developer
         </p>
       </div>
-    </div>
     
-    <div class="main">
-      <p>{text-shadow: 0 0 6px #ff00aa;}</p>
       <p>Text-shadow with pink neon glow:</p>
+      <p>{text-shadow: 0 0 6px #ff00aa;}</p>
       <div class="codeBox">
         <p class="line5">
           I am a Full-Stack Web Developer
@@ -80,30 +87,32 @@
       </div>
     </div>
 
-    <h3>Multiple Shadows</h3>
+    <h2>Multiple Shadows</h2>
     <p>The text-shadow property also accepts multiple shadows for an element. Define each shadow in a comma-separated list.</p>
     <p><strong>Syntax: </strong> {text-shadow: x-axis y-axis blurr color, x-axis y-axis blurr color}</p>
 
     <p>The following example shows a red and blue neon glow shadow:</p>
     <div class="main">
       <p><strong> Code & Output: </strong></p>
-      <p>{text-shadow: 0 0 6px #ff0000, 0 0 10px #0000ff;}</p>
       <p>Text-shadow with red and blue neon glow:</p>
+      <p>{text-shadow: 0 0 6px #ff0000, 0 0 10px #0000ff;}</p>
       <div class="codeBox">
         <p class="line7">
           I am a Full-Stack Web Developer
         </p>
       </div>
-    </div>
 
-    <div class="main">
+      <p>Text-shadow with black, blue and red neon glow:</p>
       <p>{text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px red;}</p>
-    <p>Text-shadow with black, blue and red neon glow:</p>
       <div class="codeBox">
         <p class="line8">
           I am a Full-Stack Web Developer
         </p>
       </div>
     </div>    
+    
+    <br>
+    <br>
+
 </body>
 </html>
