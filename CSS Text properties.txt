@@ -704,4 +704,4 @@ Property                Description
 
 1. text-shadow	        Specifies the shadow effect added to text
 
-Values                  2 dimensions blurr color
+      3 Values     -    2 dimensions blurr color
