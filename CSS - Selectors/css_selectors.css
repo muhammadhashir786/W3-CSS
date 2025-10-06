@@ -1,0 +1,101 @@
+body {
+  margin: 60px;
+  margin-top: 0;
+}
+
+.mainBox {
+  background-color: #e7e9eb;
+  padding: 8px 20px;
+  margin: 24px -20px;
+  box-shadow: none !important;
+}
+
+.outputBox {
+  border-left: 4px solid #04aa6d;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  width: auto;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 12px;
+  word-wrap: break-word;
+}
+
+/* below code is commented due to many p elements, because I will change the element selector for this html element for some reason */
+
+/* p {
+  text-align: center;
+  color: red;
+}  */
+
+/* I will use below class to select the some paragraph elements, but the above selector will display in the output Box of webpage */
+
+.p1 {
+  text-align: center;
+  color: red;
+}
+
+#para1 {
+  color: red;
+  text-align: center;
+}
+
+.noteBox {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 16px 32px;
+  border-left: none;
+  background-color: #ffffcc;
+}
+
+.center {
+  text-align: center;
+  color: red;
+}
+
+/* Below code will give error to element with a specific class are targetted */
+
+p.center {
+  text-align: center;
+  color: red;
+}
+
+/* section */
+
+p.center1 {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}
+
+.p2 {
+  text-align: center;
+  color: blue;
+}
+
+/* group section */
+
+.h1 {
+  text-align: center;
+  color: red;
+}
+
+.h2 {
+  text-align: center;
+  color: red;
+}
+
+.p {
+  text-align: center;
+  color: red;
+}
+
+.grouph1, .grouph2, .groupp {
+  text-align: center;
+  color: red;
+}

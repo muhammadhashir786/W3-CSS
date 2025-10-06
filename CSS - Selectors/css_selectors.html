@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="css_selectors.css" />
+  </head>
+  <body>
+    <h1>CSS Selectors</h1>
+    <hr />
+    <h2>CSS Selectors</h2>
+    <p>
+      CSS selectors are used to "find" (or select) the HTML elements that you
+      want to style.
+    </p>
+    <h3>Types Of CSS Selectors</h3>
+    <ol>
+      <li>Simple selectors (select elements based on name, id, class)</li>
+      <li>
+        Combinator selectors (select elements based on a specific relationship
+        between them)
+      </li>
+      <li>Pseudo-class selectors (select elements based on a certain state)</li>
+      <li>Pseudo-elements selectors (select and style a part of an element)</li>
+      <li>
+        Attribute selectors (select elements based on an attribute or attribute
+        value)
+      </li>
+    </ol>
+
+    <hr />
+
+    <h2>The CSS Element Selector</h2>
+    <p>The element selector selects HTML elements based on the element name.</p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        Here, all paragraph "p" elements on the below box will be
+        "center-aligned" with a red text color:
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+p {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <p class="p1">Every paragraph will be affected by the style.</p>
+        <p class="p1">Me too!</p>
+        <p class="p1">And me!</p>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>The CSS id Selector</h2>
+    <p>
+      The id selector uses the id attribute of an HTML element to select a
+      specific element.
+    </p>
+    <p>
+      The "id" of an element will always be unique in all over the HTML
+      document, so the "id" selector is used to select one unique element in the
+      whole HTML document!
+    </p>
+    <p>
+      To select an element with a specific id, write a hash (#) character,
+      followed by the id of the element.
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        The below CSS code will only be applied to the HTML element with
+        id="para1":
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+#para1 {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <p id="para0">
+          This paragraph is not affected by the style.
+          <strong>(id=para0)</strong>
+        </p>
+        <p id="para1">Hello World! <strong>(id=para1)</strong></p>
+        <p id="para2">not me! <strong>(id=para2)</strong></p>
+      </div>
+    </div>
+
+    <div class="noteBox">
+      <p><strong>Note: </strong>An id name cannot start with a number!</p>
+    </div>
+
+    <hr />
+
+    <h2>The CSS class Selector</h2>
+    <p>
+      The class selector selects HTML elements with a specific class attribute.
+    </p>
+    <p>
+      To select elements with a specific class, write a period (.) character,
+      followed by the class name.
+    </p>
+    <p>The value of "class" attribute can be same for multiple elements.</p>
+    <p>We can give many elements to same class</p>
+    <p>we can target many elements in the page using class.</p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        In this example all HTML elements with class="center" will be red and
+        center-aligned:
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+.center {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <h1 class="center">Red and center-aligned heading</h1>
+        <p class="center">Red and center-aligned paragraph.</p>
+      </div>
+    </div>
+
+    <p>
+      You can also specify that only specific HTML elements should be affected
+      or targetted by a class.
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        In this example only "p" HTML elements with class="center" will be red
+        and center-aligned:
+      </p>
+      <p><strong>Code:</strong></p>
+      <!-- /* Below code will give error to element with a specific class and both elements are targetted  -->
+      <pre>
+p.center {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <h1 class="center">This heading will not be affected</h1>
+        <p class="center">This paragraph will be red and center-aligned.</p>
+      </div>
+      <p><strong>This will give error</strong></p>
+    </div>
+
+    <p>We can define multiple values to 1 single "class" attribute.</p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        In this example the "p" element will be styled according to
+        class="center1" and to class="large":
+      </p>
+      <pre>
+p.center1 {
+  text-align: center;
+  color: red;
+}
+
+p.large {
+  font-size: 300%;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <h1 class="center1">This heading will not be affected</h1>
+        <p class="center1">This paragraph will be red and center-aligned.</p>
+        <p class="center1 large">
+          This paragraph will be red, center-aligned, and in a large font-size.
+        </p>
+      </div>
+    </div>
+
+    <div class="noteBox">
+      <p><strong>Note: </strong>A class name cannot start with a number!</p>
+    </div>
+
+    <hr />
+
+    <h2>The CSS Universal Selector</h2>
+    <p>
+      The universal selector (*) selects all HTML elements on the HTML document.
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        The below CSS code will affect or target every HTML element on the HTML
+        document:
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+* {
+  text-align: center;
+  color: blue;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <h1 class="p2">Hello world!</h1>
+
+        <p class="p2">
+          Every element on the page will be affected by the style.
+        </p>
+        <p class="p2">Me too!</p>
+        <p class="p2">And me!</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>The CSS Grouping Selector</h2>
+    <p>
+      The grouping selector selects all the HTML elements with the same style
+      definitions.
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        Look at the following CSS code (the h1, h2, and p elements have the same
+        style definitions):
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <h1 class="h1">Main Heading</h1>
+        <h2 class="h2">Sub-Heading</h2>
+        <p class="p">This is some content in my webpage.</p>
+      </div>
+    </div>
+
+    <p>It will be better to group the selectors, to minimize the code.</p>
+    <p>To group selectors, separate each selector with a comma.</p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        Look at the following CSS code (the h1, h2, and p elements have the same
+        style definitions):
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+h1, h2, p {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <h1 class="grouph1">Main Heading</h1>
+        <h2 class="grouph2">Sub-Heading</h2>
+        <p class="groupp">This is some content in my webpage.</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>All CSS Simple Selectors</h2>
+
+    <img src="CSS Basic Most Used Selectors.png" height="250px">
+  </body>
+</html>
