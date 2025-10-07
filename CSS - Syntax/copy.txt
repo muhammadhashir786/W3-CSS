@@ -1,0 +1,20 @@
+<div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        Here, all paragraph "p" elements on the below box will be
+        "center-aligned" with a red text color:
+      </p>
+      <p><strong>Code:</strong></p>
+      <pre>
+p {
+  text-align: center;
+  color: red;
+}      </pre
+      >
+      <p><strong>Output:</strong></p>
+      <div class="outputBox">
+        <p class="p1">Every paragraph will be affected by the style.</p>
+        <p class="p1">Me too!</p>
+        <p class="p1">And me!</p>
+      </div>
+    </div>

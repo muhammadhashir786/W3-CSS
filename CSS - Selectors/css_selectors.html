@@ -14,9 +14,12 @@
       CSS selectors are used to "find" (or select) the HTML elements that you
       want to style.
     </p>
-    <h3>Types Of CSS Selectors</h3>
+    <h2>Types Of CSS Selectors</h2>
     <ol>
-      <li>Simple selectors (select elements based on name, id, class)</li>
+      <li>
+        Simple selectors (select HTML elements based on element name, id,
+        class), universal and grouping selector.
+      </li>
       <li>
         Combinator selectors (select elements based on a specific relationship
         between them)
@@ -28,6 +31,8 @@
         value)
       </li>
     </ol>
+
+    <p>This page will explain the most basic CSS simple selectors only.</p>
 
     <hr />
 
@@ -113,7 +118,7 @@ p {
     </p>
     <p>The value of "class" attribute can be same for multiple elements.</p>
     <p>We can give many elements to same class</p>
-    <p>we can target many elements in the page using class.</p>
+    <p>we can target many elements in the page using specific class.</p>
 
     <div class="mainBox">
       <p><strong>Explanation:</strong></p>
@@ -143,11 +148,10 @@ p {
     <div class="mainBox">
       <p><strong>Explanation:</strong></p>
       <p class="codeExplanation">
-        In this example only "p" HTML elements with class="center" will be red
+        In this example only "p" HTML elements with class="center" will be blue
         and center-aligned:
       </p>
       <p><strong>Code:</strong></p>
-      <!-- /* Below code will give error to element with a specific class and both elements are targetted  -->
       <pre>
 p.center {
   text-align: center;
@@ -157,9 +161,8 @@ p.center {
       <p><strong>Output:</strong></p>
       <div class="outputBox">
         <h1 class="center">This heading will not be affected</h1>
-        <p class="center">This paragraph will be red and center-aligned.</p>
+        <p class="center">This paragraph will be blue and center-aligned.</p>
       </div>
-      <p><strong>This will give error</strong></p>
     </div>
 
     <p>We can define multiple values to 1 single "class" attribute.</p>
@@ -262,6 +265,7 @@ p {
         <h1 class="h1">Main Heading</h1>
         <h2 class="h2">Sub-Heading</h2>
         <p class="p">This is some content in my webpage.</p>
+        <p class="p10">This line will not affected.</p>
       </div>
     </div>
 
@@ -286,6 +290,7 @@ h1, h2, p {
         <h1 class="grouph1">Main Heading</h1>
         <h2 class="grouph2">Sub-Heading</h2>
         <p class="groupp">This is some content in my webpage.</p>
+        <p class="p10">This line will not affected.</p>
       </div>
     </div>
 
@@ -293,6 +298,8 @@ h1, h2, p {
 
     <h2>All CSS Simple Selectors</h2>
 
-    <img src="CSS Basic Most Used Selectors.png" height="250px">
+    <img src="CSS Basic Most Used Selectors.png" height="250px" />
+
+    <br />
   </body>
 </html>

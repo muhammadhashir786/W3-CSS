@@ -1,0 +1,38 @@
+body {
+  margin: 60px;
+  margin-top: 0px;
+}
+
+.mainBox {
+  padding: 8px 20px;
+  margin: 24px -20px;
+  box-shadow: none !important;
+  border-radius: 5px;
+  background-color: #e7e9eb;
+}
+
+.outputBox {
+  border-left: 4px solid #04aa6d;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  width: auto;
+  background-color: #fff;
+  color: #000;
+  padding: 8px 12px;
+  word-wrap: break-word;
+}
+
+.p1 {
+  color: blue;
+  text-align: center;
+}
+
+.noteBox {
+  background-color: #ffffcc;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 16px 32px;
+  border-left: none;
+}

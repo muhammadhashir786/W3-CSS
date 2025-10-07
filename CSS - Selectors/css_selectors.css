@@ -55,11 +55,9 @@ body {
   color: red;
 }
 
-/* Below code will give error to element with a specific class are targetted */
-
 p.center {
   text-align: center;
-  color: red;
+  color: rgb(47, 78, 255);
 }
 
 /* section */
