@@ -39,18 +39,152 @@
         element:
       </p>
       <p><strong>Code:</strong></p>
-      <pre>
-p {
-  text-align: center;
-  color: red;
-}      </pre
-      >
+      <img src="Inline CSS.png" width="500px" alt="" />
       <p><strong>Output:</strong></p>
       <div class="outputBox">
-        <p class="p1">Every paragraph will be affected by the style.</p>
-        <p class="p1">Me too!</p>
-        <p class="p1">And me!</p>
+        <h1 style="color: blue; text-align: center">This is a heading</h1>
+        <p style="color: red">This is a paragraph.</p>
       </div>
     </div>
+
+    <div class="noteBox">
+      <p>
+        <strong>Tip: </strong>An inline style loses many of the advantages of a
+        style sheet (by mixing content with presentation). Use this method
+        sparingly.
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>Internal CSS</h2>
+    <p>
+      An internal style sheet may be used if one single HTML page has a unique
+      style.
+    </p>
+    <p>
+      The internal style is defined inside the "style" element, inside the head
+      section.
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        Internal styles are defined within the "style" element, inside the
+        "head" section of an HTML page:
+      </p>
+      <p><strong>Code:</strong></p>
+      <img src="Internal CSS.png" width="700px" alt="" />
+      <p><strong>Output:</strong></p>
+      <div class="outputBox1">
+        <h1 class="h2">This is Heading</h1>
+        <p class="p2">This is paragraph</p>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>External CSS</h2>
+    <p>
+      With an external style sheet, you can change the look of an entire website
+      by changing just one file!
+    </p>
+    <p>
+      We create an external file names style and keep the extension ".css" of
+      that file, then we link that css file with HTML document in the head
+      section below the title tag.
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Explanation:</strong></p>
+      <p class="codeExplanation">
+        External styles are defined within the "link" element, inside the "head"
+        section of an HTML page:
+      </p>
+      <p><strong>External File Reference:</strong></p>
+      <img src="Reference of External Style Sheet.png" width="700px" alt="" />
+      <p><strong>Code: </strong></p>
+      <pre>
+body {
+  background-color: light-blue;
+  
+}
+
+.h1 {
+  color: navy;
+  margin-left: 40px;
+}
+      </pre>
+      <p><strong>Output:</strong></p>
+      <div class="outputBox2">
+        <h1 class="h3">This is a heading</h1>
+        <p class="p3">This is a paragraph.</p>
+      </div>
+    </div>
+
+    <p>
+      An external style sheet can be written in any text editor, and must be
+      saved with a .css extension.
+    </p>
+    <p>The external .css file should not contain any HTML tags.</p>
+    <p>Here is how the "mystyle.css" file looks like above code:</p>
+
+    <img src="CSS Code of External Style Sheet.png" width="800px" alt="" />
+
+    <div class="noteBox1">
+      <p>
+        <strong>Note: </strong>Do not add a space between the property value
+        (20) and the unit (px):
+      </p>
+      <p>Incorrect (space): margin-left: 20 px;</p>
+      <p>Correct (no space): margin-left: 20px</p>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>Multiple Style Sheets</h2>
+    <p>
+      If some properties have been defined for the same selector (element) in
+      different style sheets, the value from the last read style sheet will be
+      used.
+    </p>
+
+    <img
+      src="internal or ecxternal css code for same element .png"
+      width="800px"
+      alt=""
+    />
+    <br />
+    <br />
+    <img src="2 styles for 1 element after .png" width="800px" alt="" />
+    <br />
+    <br />
+    <img src="2 styles for 1 element before .png" width="800px" alt="" />
+
+    <br />
+    <br />
+    <hr />
+
+    <h2>Cascading Order</h2>
+    <p>
+      What style will be used when there is more than one style specified for an
+      HTML element?
+    </p>
+    <p>
+      All the styles in a page will "cascade" into a new "virtual" style sheet
+      by the following rules, where number one has the highest priority:
+    </p>
+    <ol>
+      <li>Inline style (inside an HTML element)</li>
+      <li>External and internal style sheets (in the head section)</li>
+      <li>Browser default</li>
+    </ol>
+
+    <p>
+      So, an inline style has the highest priority, and will override external
+      and internal styles and browser defaults.
+    </p>
   </body>
 </html>

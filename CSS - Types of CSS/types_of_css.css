@@ -1,4 +1,6 @@
 body {
+  margin: 50px;
+  margin-top: 0;
 }
 
 .mainBox {
@@ -17,4 +19,54 @@ body {
   background-color: #fff;
   color: #000;
   padding: 8px 12px;
+}
+
+.noteBox {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 16px 32px;
+  border-left: none;
+  background-color: #ffffcc;
+}
+
+.outputBox1 {
+  background-color: linen;
+  border-left: 4px solid #04aa6d;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  width: auto;
+  color: #000;
+  padding: 8px 12px;
+}
+
+.h2 {
+  color: maroon;
+  margin-left: 40px;
+}
+
+.outputBox2 {
+  background-color: lightblue;
+  border-left: 4px solid #04aa6d;
+  margin-top: 16px !important;
+  margin-bottom: 16px !important;
+  width: auto;
+  color: #000;
+  padding: 8px 12px;
+}
+
+.h3 {
+  color: navy;
+  margin-left: 40px;
+}
+
+.noteBox1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-left: -32px;
+  margin-right: -32px;
+  padding: 16px 32px;
+  border-left: none;
+  background-color: #ffdddd;
 }
