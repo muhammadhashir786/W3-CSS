@@ -8,12 +8,9 @@
   </head>
   <body>
     <h1>CSS Backgrounds</h1>
-    <button class="previousBtn">
-      <a class="btnText" href="rgb.html">&lt; Previous</a>
-    </button>
 
     <button class="nextBtn">
-      <a class="btnText" href="hsl.html">Next &gt;</a>
+      <a class="btnText" href="#">Next &gt;</a>
     </button>
 
     <br />
@@ -32,7 +29,9 @@
       <li>background-attachment</li>
       <li>background-position</li>
     </ol>
-    <p>The Shorthand Property of CSS that we learn in the last!</p>
+    <p>
+      The Shorthand Property of CSS that we learn in the last of this chapter!
+    </p>
     <ul>
       <li>background (property)</li>
     </ul>
@@ -46,6 +45,7 @@
     </p>
 
     <!-- Box Section Starts Here -->
+    <!-- Code Box -->
 
     <div class="codeBox">
       <p><strong>Code: </strong></p>
@@ -53,6 +53,7 @@
       <img class="codeImgSize" src="Images/codeImage1.jpg" alt="" />
 
       <!-- here output box refers to body of the webpage  -->
+      <!-- Output Box -->
 
       <p><strong>Output: </strong></p>
       <div class="firstOutputBox">
@@ -96,10 +97,106 @@
       <div class="mainOutputBox">
         <h1 class="h1">Hello World</h1>
         <div class="div">
-            <p>This is content</p>
-            <p class="p">This is some content in webpage</p>
-            <p>This is other content</p>
+          <p>This is content</p>
+          <p class="p">This is some content in webpage</p>
+          <p>This is other content</p>
         </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>Opacity / Transparency</h2>
+    <p>
+      The opacity property specifies the opacity/transparency of an element. It
+      can take a value from 0.0 - 1.0. The lower value, the more transparent:
+    </p>
+    <img src="Images/3 opacity.png" width="900px" alt="" />
+
+    <div class="codeBox">
+      <p><strong>Code: </strong></p>
+      <img class="codeImgSize" src="Images/4 code image.png" alt="" />
+
+      <p><strong>Output: </strong></p>
+      <div class="mainOutputBox">
+        <div class="first">
+          <h1>opacity 0.1</h1>
+        </div>
+        <div class="second">
+          <h1>opacity 0.3</h1>
+        </div>
+        <div class="third">
+          <h1>opacity 0.6</h1>
+        </div>
+        <div class="forth">
+          <h1>opacity 1 (default)</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Light Yellow Note Box -->
+
+    <div class="noteBox">
+      <p>
+        <strong>Note: </strong>
+        When using the opacity property to add transparency to the background of
+        an element, all of its child elements inherit the same transparency.
+        This can make the text inside a fully transparent element hard to read.
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>Transparency using RGBA</h2>
+    <p>
+      If you do not want to apply opacity to child elements, like in our example
+      above, use <strong>RGBA</strong> color values. The following example sets
+      the opacity for the background color and not the text:
+    </p>
+    <img src="Images/5 Transparency using RGBA.png" width="900px" alt="" />
+
+    <p>
+      You learned from our CSS Colors Chapter, that you can use RGB as a color
+      value. In addition to RGB, you can use an RGB color value with an
+      <strong>alpha</strong>
+      channel (RGB<strong>A</strong>) - which specifies the opacity for a color.
+    </p>
+    <p>
+      An RGBA color value is specified with: rgba(red, green, blue, alpha). The
+      alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully
+      opaque).
+    </p>
+    <p>
+      <strong>Tip: </strong> You will learn more about RGBA Colors in our CSS
+      Colors Chapter.
+    </p>
+    <div class="codeBox">
+      <p><strong>Code: </strong></p>
+      <img class="codeImgSize" src="Images/6 code image rgba.png" alt="" />
+
+      <p><strong>Output: </strong></p>
+      <div class="mainOutputBox">
+        <div class="fifth">
+          <h1>10% opacity</h1>
+        </div>
+
+        <div class="sixth">
+          <h1>30% opacity</h1>
+        </div>
+
+        <div class="seventh">
+          <h1>60% opacity</h1>
+        </div>
+
+        <div>
+          <h1>default</h1>
+        </div>
+
+        <p>
+          Notice how the text gets transparent as well as the background color
+          when using the opacity property.
+        </p>
       </div>
     </div>
   </body>
