@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Property | Background Image Repeat</title>
+    <link rel="stylesheet" href="css_background_image_repeat.css" />
+  </head>
+  <body>
+    <h1>CSS Background Image Repeat</h1>
+    <button class="previousBtn">
+      <a class="btnText" href="">&lt; Previous</a>
+    </button>
+
+    <button class="nextBtn">
+      <a class="btnText" href="">Next &gt;</a>
+    </button>
+
+    <br />
+    <br />
+    <hr />
+
+    <h2>CSS background-repeat</h2>
+    <p>
+      The background-repeat property sets if/how a background image will be
+      repeated.
+    </p>
+    <p>
+      By default, a background-image is repeated both vertically and
+      horizontally.
+    </p>
+    <p>
+      Some images should be repeated only horizontally or vertically, or they
+      will look strange, like this:
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Code: </strong></p>
+      <img class="codeImgSize" src="Images/13 bg repeat gradient.png" alt="" />
+
+      <p><strong>Output: </strong></p>
+      <div class="outputBox box1">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <h2>CSS background-repeat Horizontally</h2>
+    <p>
+      If the image above is repeated only horizontally (background-repeat:
+      repeat-x;), the background will look better:
+    </p>
+
+    <div class="mainBox">
+      <p><strong>Code: </strong></p>
+      <img src="Images/15 bg repeat x axis .png" width="700px" alt="" />
+
+      <p><strong>Output: </strong></p>
+      <div class="outputBox box2">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+
+    <div class="noteBox">
+      <p>
+        <strong>Tip: </strong>
+        To repeat an image only vertically, use background-repeat: repeat-y;
+      </p>
+    </div>
+
+    <hr />
+
+    <h2>CSS background-repeat: no-repeat</h2>
+    <p>
+      Showing the background image only once is also specified by the
+      background-repeat property:
+    </p>
+
+    <div class="mainBox">
+      <p>
+        if we don't use the background "no-repeat" property, then you will see
+        the repeated background like this:
+      </p>
+      <!-- output box -->
+
+      <p><strong>Output: </strong></p>
+      <div class="outputBox box3">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+
+    <div class="mainBox">
+      <p><strong>Code: </strong></p>
+      <img
+        src="Images/17 bg no repeat property code .png"
+        width="600px"
+        alt=""
+      />
+
+      <!-- output box -->
+
+      <p><strong>Output: </strong></p>
+      <div class="outputBox box4">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+
+    <p>
+      In the example above, the background image is placed in the same place as
+      the text. We want to change the position of the image, so that it does not
+      disturb the text too much.
+    </p>
+
+    <hr />
+
+    <h2>CSS background-position</h2>
+    <p>
+      The background-position property is used to set the starting position of
+      the background image.
+    </p>
+    <p>
+      By default, a background-image is placed at the top-left corner of an
+      element.
+    </p>
+
+    <div class="mainBox">
+      <h4>Code:</h4>
+      <p>Position the background image in the top-right corner:</p>
+      <img src="Images/18 bg image position.png" width="6" alt="" /> 
+
+      <!-- output box -->
+
+      <h4>Output:</h4>
+      <div class="outputBox">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+  </body>
+</html>

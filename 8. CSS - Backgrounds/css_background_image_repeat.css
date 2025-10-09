@@ -66,15 +66,6 @@ body {
   border-radius: 5px;
 }
 
-.body1 {
-    background-image: url("Images/9\ background\ image.jpeg");
-    padding: 10px;
-}
-.body2 {
-    background-image: url("Images/10\ background\ image.webp");
-    padding: 10px;
-}
-
 .noteBox {
   margin-top: 24px;
   margin-bottom: 24px;
@@ -85,14 +76,40 @@ body {
   border-left: none;
 
   background-color: #ffffcc;
-  
 }
 
-.OutputBox {
-  background-color: white;
+.mainBox {
+  padding: 8px 20px;
+  margin: 24px -20px;
+  box-shadow: none !important;
+  background-color: #e7e9eb;
+  border-radius: 5px;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.p1BgImage {
-  background-image: url(Images/9\ background\ image.jpeg);
+.outputBox {
+    background-color: white;
 }
 
+.box1 {
+    background-image: url(Images/14\ bg\ repeat\ gradient.webp);
+    height: 540px;
+}
+.box2 {
+    background-image: url(Images/14\ bg\ repeat\ gradient.webp);
+    background-repeat: repeat-x;
+    height: 540px;
+}
+
+.box3 {
+    background-image: url(Images/16\ bg\ tree\ graphic.jpg);
+    height: 500px;
+}
+.box4 {
+    background-image: url(Images/16\ bg\ tree\ graphic.jpg);
+    background-repeat: no-repeat;
+    height: 500px;
+}
