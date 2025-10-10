@@ -38,6 +38,13 @@
       <p><strong>Code: </strong></p>
       <img class="codeImgSize" src="Images/13 bg repeat gradient.png" alt="" />
 
+      <p><strong>Explanation: </strong></p>
+      <p>
+        I also gave the property {height: 540px;} to this element so that we can
+        see how this background-image will be repeated in horizontally and
+        vertically:
+      </p>
+
       <p><strong>Output: </strong></p>
       <div class="outputBox box1">
         <h1>Hello World</h1>
@@ -49,13 +56,16 @@
 
     <h2>CSS background-repeat Horizontally</h2>
     <p>
-      If the image above is repeated only horizontally (background-repeat:
-      repeat-x;), the background will look better:
+      To define background-image only repeat "horizontally", use this property
+      {background-repeat: repeat-x;}, the background will look better:
     </p>
 
     <div class="mainBox">
       <p><strong>Code: </strong></p>
       <img src="Images/15 bg repeat x axis .png" width="700px" alt="" />
+
+      <p><strong>Explanation: </strong></p>
+      <p>The background-image will only repeat in x-axis not in y-axis:</p>
 
       <p><strong>Output: </strong></p>
       <div class="outputBox box2">
@@ -64,27 +74,20 @@
       </div>
     </div>
 
-    <div class="noteBox">
-      <p>
-        <strong>Tip: </strong>
-        To repeat an image only vertically, use background-repeat: repeat-y;
-      </p>
-    </div>
-
     <hr />
 
-    <h2>CSS background-repeat: no-repeat</h2>
+    <h2>CSS background-repeat Vertically</h2>
     <p>
-      Showing the background image only once is also specified by the
-      background-repeat property:
+      To define background-image only repeat "vertically", use this property
+      {background-repeat: repeat-y;} :
     </p>
 
     <div class="mainBox">
-      <p>
-        if we don't use the background "no-repeat" property, then you will see
-        the repeated background like this:
-      </p>
-      <!-- output box -->
+      <p><strong>Code: </strong></p>
+      <img src="Images/19 bg repeat vertically.png" width="700px" alt="" />
+
+      <p><strong>Explanation: </strong></p>
+      <p>The background-image will only repeat in y-axis not in x-axis:</p>
 
       <p><strong>Output: </strong></p>
       <div class="outputBox box3">
@@ -93,18 +96,54 @@
       </div>
     </div>
 
+    <!-- <div class="noteBox">
+      <p>
+        <strong>Tip: </strong>
+        To repeat an image only vertically, use background-repeat: repeat-y;
+      </p>
+    </div> -->
+
+    <hr />
+
+    <h2>CSS background-repeat: no-repeat</h2>
+    <p>
+      Showing the background image only once is also specified by the
+      background-repeat property.
+    </p>
+    <p>
+      If you don't want to repeat background-image horizontally and vertically
+      or in any direction, then use this property.
+    </p>
+
     <div class="mainBox">
       <p><strong>Code: </strong></p>
-      <img
-        src="Images/17 bg no repeat property code .png"
-        width="600px"
-        alt=""
-      />
+      <img src="Images/20 code bg .png" alt="" />
 
-      <!-- output box -->
+      <p><strong>Explanation: </strong></p>
+      <p>
+        if we don't use the background-repeat property, then you will see the
+        repeated background like this:
+      </p>
 
       <p><strong>Output: </strong></p>
       <div class="outputBox box4">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+
+    <div class="mainBox">
+      <p><strong>Code: </strong></p>
+      <img src="Images/21 code bg no-repeat .png" width="600px" alt="" />
+
+      <p><strong>Explanation: </strong></p>
+      <p>
+        if we use the background-repeat property, then you will see the
+        background does not repeat like this:
+      </p>
+
+      <p><strong>Output: </strong></p>
+      <div class="outputBox box5">
         <h1>Hello World</h1>
         <p>This is some content in webpage</p>
       </div>
@@ -130,16 +169,82 @@
 
     <div class="mainBox">
       <h4>Code:</h4>
-      <p>Position the background image in the top-right corner:</p>
-      <img src="Images/18 bg image position.png" width="6" alt="" /> 
+      <img src="Images/22 code bg position right.png" alt="" />
+
+      <p><strong>Explanation: </strong></p>
+      <p>Position the background image in the right corner:</p>
 
       <!-- output box -->
 
       <h4>Output:</h4>
-      <div class="outputBox">
+      <div class="outputBox box6">
         <h1>Hello World</h1>
         <p>This is some content in webpage</p>
       </div>
     </div>
+
+    <div class="noteBox">
+      <p>
+        <strong>Note: </strong>
+        bydefault the image will be positioned in the center right corner of the
+        box/element. To positioned the image in the top-right corner of the box,
+        see the below part.
+      </p>
+    </div>
+
+    <div class="mainBox">
+      <h4>Code:</h4>
+      <img src="Images/22 code bg position right.png" alt="" />
+
+      <p><strong>Explanation: </strong></p>
+      <p>Position the background image in the top-right corner like this:</p>
+
+      <!-- output box -->
+
+      <h4>Output:</h4>
+      <div class="outputBox box7">
+        <h1>Hello World</h1>
+        <p>This is some content in webpage</p>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+
+    <h2>The CSS Background Repeat and Position Properties</h2>
+    <img src="Images/23 summary background properties.png" width="800" alt="" />
+
+    <h2>Reference</h2>
+    <p>
+      If you want to learn more about the background-image and
+      background-position properties check the below links:
+    </p>
+    <ul>
+      <li>
+        <a
+          href="https://www.w3schools.com/cssref/pr_background-repeat.php"
+          target="_blank"
+          >Background Image property</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.w3schools.com/cssref/pr_background-position.php"
+          target="_blank"
+          >Background Position property</a
+        >
+      </li>
+    </ul>
+
+    <hr />
+    <br />
+
+    <button class="previousBtn">
+      <a class="btnText" href="">&lt; Previous</a>
+    </button>
+
+    <button class="nextBtn">
+      <a class="btnText" href="">Next &gt;</a>
+    </button>
   </body>
 </html>
